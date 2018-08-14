@@ -1,0 +1,18 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - "bin/**/*"
+    - "config/**/*"
+    - "db/**/*"
+    - "log/**/*"
+    - "tmp/**/*"
+    - "test/**/*"
+    - "vendor/**/*"
+    - "**/config.ru"
+    - "**/Gemfile"
+    - "**/Rakefile"
+
+# 日本語のコメントを許可する
+Style/AsciiComments:
+  Enabled: false
